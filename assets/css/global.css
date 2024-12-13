@@ -1,17 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Press Start 2P', sans-serif;
     box-sizing: border-box;
 }
 
+
+
+h1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-transform: uppercase;
+    color: #6C79DB;
+    animation: blink .95s step-start infinite;
+}
+
+
+
+@keyframes blink{
+    0% { color: transparent;}
+    50% {color: #6C79DB}
+    100% {color: transparent;}
+}
+
 body {
-    background-color: #f6f8fc;
+    background-color: #6C79DB;
 }
 
 .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 @media screen and (min-width: 992px) {
